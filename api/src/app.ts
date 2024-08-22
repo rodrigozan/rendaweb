@@ -14,9 +14,10 @@ export class App {
 
     constructor() {
         this.server = express()
+        this.server.get('/', (_req, res) => res.json({ message: 'root route' }))
         this.connection()
         this.middleware()
-        this.routes()      
+        this.routes()
         this.documentation()
     }
 
