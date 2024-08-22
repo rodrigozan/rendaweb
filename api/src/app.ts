@@ -3,6 +3,7 @@ import * as dotenv from 'dotenv'
 import cors from 'cors'
 
 import { setupSwagger } from './swagger'
+import { Connection } from './database/MongoConnection'
 
 import router from "./router"
 
@@ -13,6 +14,7 @@ export class App {
 
     constructor() {
         this.server = express()
+        this.connection()
         this.middleware()
         this.routes()      
         this.documentation()
@@ -30,4 +32,9 @@ export class App {
     private documentation() {
         setupSwagger(this.server)
     }
+
+    private async connection() {
+        await Connection.connect()
+    }
+
 }
