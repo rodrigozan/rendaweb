@@ -1,0 +1,17 @@
+{
+  "name": "rendaweb",
+  "version": "1.0.0",
+  "description": "Rendaweb project",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigozan/rendaweb"
+  },
+  "author": {
+    "name": "Rodrigo Zan",
+    "email": "rodrigo.zandonadi.dev@gmail.com",
+    "url": "https://medium.com/code-write"
+  },
+  "license": "MIT",
+  "private": false
+}
