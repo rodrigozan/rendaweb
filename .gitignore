@@ -1,18 +1,18 @@
-*/node_modules/
+# Ignora node_modules em qualquer subdiretório
+node_modules/
 **/node_modules/
 
+# Ignora arquivos de log e temporários
 *.log
 *.tmp
 npm-debug.log
 yarn-error.log
 coverage/
 
+# Ignora arquivos e pastas de configuração de IDE
 .idea/
 .vscode/
 .vssettings/
 
-*.idea/
-*.vscode/
-*.vssettings/
-
-*/.env
+# Ignora qualquer arquivo .env em qualquer subdiretório
+**/.env
